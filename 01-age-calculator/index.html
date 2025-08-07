@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Age Calculator</h1>
+      <p class="subtitile">Calculate Your exact age</p>
+
+      <form action="" id="ageForm">
+        <div class="input-group">
+          <label for="birthDate">Enter Your birth date:</label>
+          <input type="date" id="birthDate" required />
+        </div>
+        <button type="submit" class="calculate-btn">Calculate Age</button>
+      </form>
+      <div id="result" class="result hidden">
+        <h2>Your Age</h2>
+        <div class="age-display">
+          <div class="age-item">
+            <span class="number" id="years">0</span>
+            <span class="label">years</span>
+          </div>
+
+          <div class="age-item">
+            <span class="number" id="month">0</span>
+            <span class="label">Month</span>
+          </div>
+
+          <div class="age-item">
+            <span class="number" id="days">0</span>
+            <span class="label">Days</span>
+          </div>
+        </div>
+        <div class="additional-info">
+          <p>You have lived for <span id="toalDays">0</span> days</p>
+          <p>Your next birthday is in <span id="nextBirthday">0</span>days</p>
+        </div>
+      </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
